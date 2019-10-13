@@ -95,6 +95,24 @@ Les combinacions mestre jedi serien:
 * Realitzeu un programa recursiu **(2 punt)**.
 * Analitzeu la complexitat i  l'eficiència de les vostres solucions **(2 punt)**. S'ha de generar un informe complet amb l'anàlisi de costos, el vostre disseny, experiments amb diferents valors de $n$ i diferents configuracions de baralles. Gràfiques, taules,...
 
+## Implementació
+
+Us adjunto un esquelet de codi que heu d'actualitzar i fer servir pel desenvolupament. En primer lloc, familiaritzeu-vos amb el contingut de l'esquelet.
+
+La documentació en pdf ha d'anar adjuntada dins de la carpeta *docs*.
+
+Per poder fer testar la implementació és imprescindible fer un:
+
+```sh
+make install # Crear un virtualenv i instal·lar dependències.
+make test-secretum # Testos per verificar la implementació de la part 1.
+make test-jedi # Testos per verificar la implementació de la part 2.
+```
+
+També teniu inclòs el **pylint** per verificar les vostres implementacions seguint la guia dels bons estils de programació amb python.
+
+Si necessiteu instal·lar mòduls addicionals; modifiqueu el *requeriments.txt* i torneu a fer un **make install**, també actualitzeu el setup.py.
+
 ## Avaluació
 
 Es valorarà l'ús de bones pràctiques en la programació.
