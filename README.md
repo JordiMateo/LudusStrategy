@@ -48,10 +48,10 @@ En aquesta pràctica desenvoluparem rutines per obtenir la màxima puntuació en
 
 Per superar el primer torn de la partida els participants han de desxifrar la informació d'un missatge codificat per obtenir els recursos necessaris per avançar en la partida. Per obtenir la informació del missatge s'han de seguir unes regles molt específiques. El **descodificador** únicament pot ser utilitzar una vegada per jugador. Com més ràpid sigui el jugador en obtenir la informació codificada més recursos obtindrà per les rondes següents. El descodificador necessita un nombre enter d'un únic dígit. Per poder obtenir el nombre correcte s'han de fer un conjunt d'operacions matemàtiques:
 
-1. Agafar els ($n-1$) digitis del final del missatge.
-2. Duplicar-los tantes vegades com indiqui l'últim dígit ($n$).
+1. Agafar els (*n-1*) digitis del final del missatge.
+2. Duplicar-los tantes vegades com indiqui l'últim dígit (*n*).
 
-D'aquesta manera obtindreu un nombré anomenat $P$. Aquest nombre $P$ s'ha de descompondre en la suma dels seus dígits de forma iterativa fins a aconseguir un nombre d'un dígit. Aquest dígit és la clau per descodificar el missatge. Per exemple:
+D'aquesta manera obtindreu un nombré anomenat *P*. Aquest nombre *P* s'ha de descompondre en la suma dels seus dígits de forma iterativa fins a aconseguir un nombre d'un dígit. Aquest dígit és la clau per descodificar el missatge. Per exemple:
 
 ```sh
 AA C214 13ASD EFDEASDA 1234
@@ -64,19 +64,18 @@ AA C214 13ASD EFDEASDA 1234
 (6) <- Clau del descodificador.
 ```
 
-S'ha de desenvolupar un mètode que donat un cadena de nombres enters $n$ i un valor $k$. Obtingui de la forma més ràpida possible el dígit correcte.
+S'ha de desenvolupar un mètode que donat un cadena de nombres enters *n* i un valor *k*. Obtingui de la forma més ràpida possible el dígit correcte.
 
 * Realitzeu un programa iteratiu **(1 punt)**.
 * Realitzeu un programa recursiu **(2 punt)**.
-* Analitzeu la complexitat i  l'eficiència de les vostres solucions **(2 punt)**. S'ha de generar un informe complet amb l'anàlisi de costos, el vostre disseny, experiments amb diferents valors ($n-1$) i ($n$). Gràfiques, taules,...
+* Analitzeu la complexitat i  l'eficiència de les vostres solucions **(2 punt)**. S'ha de generar un informe complet amb l'anàlisi de costos, el vostre disseny, experiments amb diferents valors (*n-1*) i (*n*). Gràfiques, taules,...
 
 ## Torn 2. Aconseguir el combo *Mestre Jedi* 
 
 En el torn actual hem d'intentar posar a la taula el màxim nombre de cartes d'una baralla amb $n$ cartes que ha estat barallada i no es pot alterar l'ordre. Com a jugador podem **descartar** una carta o **jugar-la** a la taula. Al final guanya el jugador que menys cartes ha descartat. Les regles per jugar són:
 
 * Únicament puc jugar cartes de valor més gran que les que ja estan jugades a la taula.
-* La combinació jedi és una de les múltiples jugades que permet jugar el màxim nombre de cartes. Obtenint sempre la màxima puntuació possible.
-
+* La combinació jedi és una de les múltiples jugades que permet jugar el màxim nombre de cartes. 
 Per exemple:
 
 ```sh
