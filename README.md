@@ -72,7 +72,7 @@ S'ha de desenvolupar un mètode que donat un cadena de nombres enters *n* i un v
 
 ## Torn 2. Aconseguir el combo *Mestre Jedi* 
 
-En el torn actual hem d'intentar posar a la taula el màxim nombre de cartes d'una baralla amb $n$ cartes que ha estat barallada i no es pot alterar l'ordre. Com a jugador podem **descartar** una carta o **jugar-la** a la taula. Al final guanya el jugador que menys cartes ha descartat. Les regles per jugar són:
+En el torn actual hem d'intentar posar a la taula el màxim nombre de cartes d'una baralla amb *n* cartes que ha estat barallada i no es pot alterar l'ordre. Com a jugador podem **descartar** una carta o **jugar-la** a la taula. Al final guanya el jugador que menys cartes ha descartat. Les regles per jugar són:
 
 * Únicament puc jugar cartes de valor més gran que les que ja estan jugades a la taula.
 * La combinació jedi és una de les múltiples jugades que permet jugar el màxim nombre de cartes. 
